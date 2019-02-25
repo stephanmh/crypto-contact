@@ -22,7 +22,7 @@
     "homepage": "",
     "dependencies": {
         "babel-polyfill": "^6.26.0",
-        "bootstrap": "4",
+        "bootstrap": "^4.3.1",
         "jquery": "^3.3.1",
         "normalize.css": "^8.0.0",
         "openpgp": "^4.4.7",
