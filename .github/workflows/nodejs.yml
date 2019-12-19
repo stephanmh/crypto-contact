@@ -17,6 +17,10 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
+    - uses: CultureHQ/actions-yarn@v1.0.1
+    - name:  yarn-cli
+      run:
+        yarn
     - name: npm install, build, and test
       run: |
         npm ci
