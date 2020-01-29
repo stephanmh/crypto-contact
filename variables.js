@@ -1,11 +1,6 @@
-require('./styles/index.scss');
-var openpgp = require('openpgp');
-
-import PopperJs from 'popper.js';
-import jquery from 'jquery';
-
-
-const publicKeyString = `-----BEGIN PGP PUBLIC KEY BLOCK-----
+module.exports = {
+    language: 'en',
+    pgpkey: `-----BEGIN PGP PUBLIC KEY BLOCK-----
 
 mQINBF2PG60BEACzAOOadWqHzvhpH+6VvG7RvAzypGjzH0Jpjx34G7S1UlGZ0K5L
 u+CaS95lBLzTSWqaqbNfwtz91sWb7WzIppDu2oXoLMFaOQm5GMeqAc+GOg9FR60G
@@ -58,31 +53,5 @@ d6a/eksO79FNAzUN/ErbCSQKdgo1dGqzV+T/fELTuNuDWZ/yXK+7bjUODBrBTVoB
 U7NNA6/2++57nYyelfuAaccMo9sa
 =ip7g
 
------END PGP PUBLIC KEY BLOCK-----`;
-
-function OnSubmit() {
-    encryptDecryptFunction().finally();
-}
-
-const encryptDecryptFunction = async () => {
-
-    const options = {
-        message: openpgp.message.fromText('From: ' + document.getElementById('email').value + 'nn' + document.getElementById('message').value),
-        publicKeys: (await openpgp.key.readArmored(publicKeyString)).keys,
-    };
-
-    openpgp.encrypt(options).then(ciphertext => {
-        jquery("#message").val(ciphertext.data);
-    });
+-----END PGP PUBLIC KEY BLOCK-----`
 };
-
-
-const button = document.getElementById('encrypt');
-
-if (button.addEventListener) {
-    button.addEventListener('click', OnSubmit, false);
-} else if (button.attachEvent) {
-    button.attachEvent('onclick', OnSubmit);
-}
-
-

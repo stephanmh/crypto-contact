@@ -1,8 +1,9 @@
 const path = require('path');
 
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin')
-const CleanWebpackPlugin = require('clean-webpack-plugin'); //installed via npm
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const variables = require('./variables.js');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const  SriPlugin = require('webpack-subresource-integrity');
@@ -27,7 +28,7 @@ module.exports = {
                 loader: 'babel-loader',
 
                 options: {
-                    presets: ['env']
+                    presets: ["@babel/preset-env"]
                 }
             },
             {
@@ -81,8 +82,12 @@ module.exports = {
             template: './src/index.html',
             // Inject the js bundle at the end of the body of the given template
             inject: 'body',
+            title: "Message Encrypter",
+            pgpkey: variables.pgpkey
         }),
-        new CleanWebpackPlugin(buildPath),
+        new CleanWebpackPlugin({
+            cleanAfterEveryBuildPatterns: ['dist']
+        }),
         new FaviconsWebpackPlugin({
             // Your source logo
             logo: './src/assets/icon.png',

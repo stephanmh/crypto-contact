@@ -1,6 +1,7 @@
 const path = require('path');
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const variables = require('./variables.js');
 
 module.exports = {
     devtool: 'eval-cheap-module-source-map',
@@ -19,7 +20,7 @@ module.exports = {
                 exclude: /node_modules/,
                 loader: 'babel-loader',
                 options: {
-                    presets: ['env']
+                    presets: ["@babel/preset-env"]
                 }
             },
             {
@@ -71,7 +72,9 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             template: './src/index.html',
-            inject: true
+            inject: true,
+            title: "Message encrypter",
+            pgpkey: variables.pgpkey
         })
     ]
 };
