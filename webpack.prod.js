@@ -1,7 +1,7 @@
 const path = require('path');
 
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin')
-const CleanWebpackPlugin = require('clean-webpack-plugin'); //installed via npm
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
@@ -82,7 +82,7 @@ module.exports = {
             // Inject the js bundle at the end of the body of the given template
             inject: 'body',
         }),
-        new CleanWebpackPlugin(buildPath),
+        new CleanWebpackPlugin(),
         new FaviconsWebpackPlugin({
             // Your source logo
             logo: './src/assets/icon.png',
