@@ -26,7 +26,7 @@
         "jquery": "^3.5.0",
         "normalize.css": "^8.0.1",
         "openpgp": "^4.10.4",
-        "popper.js": "^1.15.0",
+        "popper.js": "^1.16.1",
         "webpack-subresource-integrity": "^1.4.1"
     },
     "devDependencies": {
