@@ -30,7 +30,7 @@
         "webpack-subresource-integrity": "^1.4.1"
     },
     "devDependencies": {
-        "ajv": "6.12.2",
+        "ajv": "6.12.3",
         "autoprefixer": "9.8.4",
         "babel-core": "6.26.3",
         "babel-loader": "8.1.0",
