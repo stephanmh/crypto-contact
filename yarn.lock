@@ -5291,10 +5291,10 @@ opener@^1.5.1:
   resolved "https://registry.yarnpkg.com/opener/-/opener-1.5.1.tgz#6d2f0e77f1a0af0032aca716c2c1fbb8e7e8abed"
   integrity sha512-goYSy5c2UXE4Ra1xixabeVh1guIX/ZV/YokJksb6q2lubWu6UbvPQ20p542/sFIll1nl8JnCyK9oBaOcCWXwvA==
 
-openpgp@^4.10.4:
-  version "4.10.4"
-  resolved "https://registry.yarnpkg.com/openpgp/-/openpgp-4.10.4.tgz#453ae856052bcedc78ac1556ffbc2210348151f3"
-  integrity sha512-JMceIvDDE9Qko2AsMpVgf4YM7h7zPt3sZT0qnOIvwynuDuTs+wL5ht37t894hirgzSHr2d+64nEnKbBtwoYwSQ==
+openpgp@^4.10.5:
+  version "4.10.5"
+  resolved "https://registry.yarnpkg.com/openpgp/-/openpgp-4.10.5.tgz#6624b599dc621ac9e23fce6ab84fff4561dc833f"
+  integrity sha512-J/toRwT5K9a1A/Cvtyleam4asH+g0uBGqz9/9+hAmy7OMg3AhNYSHTinlnKJHuBz46nQm/EMu03X39p3//Ik3w==
   dependencies:
     asn1.js "^5.0.0"
     node-fetch "^2.1.2"
