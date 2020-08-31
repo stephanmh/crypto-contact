@@ -25,7 +25,7 @@
         "bootstrap": "^4.5.2",
         "jquery": "^3.5.1",
         "normalize.css": "^8.0.1",
-        "openpgp": "^4.10.7",
+        "openpgp": "^4.10.8",
         "popper.js": "^1.16.1",
         "webpack-subresource-integrity": "^1.4.1"
     },
