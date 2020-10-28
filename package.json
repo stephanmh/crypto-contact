@@ -27,7 +27,7 @@
         "normalize.css": "^8.0.1",
         "openpgp": "^4.10.8",
         "popper.js": "^1.16.1",
-        "webpack-subresource-integrity": "^1.4.1"
+        "webpack-subresource-integrity": "^1.5.1"
     },
     "devDependencies": {
         "ajv": "6.12.5",
