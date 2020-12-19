@@ -5370,10 +5370,10 @@ opener@^1.5.1:
   resolved "https://registry.yarnpkg.com/opener/-/opener-1.5.1.tgz#6d2f0e77f1a0af0032aca716c2c1fbb8e7e8abed"
   integrity sha512-goYSy5c2UXE4Ra1xixabeVh1guIX/ZV/YokJksb6q2lubWu6UbvPQ20p542/sFIll1nl8JnCyK9oBaOcCWXwvA==
 
-openpgp@^4.10.8:
-  version "4.10.8"
-  resolved "https://registry.yarnpkg.com/openpgp/-/openpgp-4.10.8.tgz#b08d9f52ced344128cf477dc060fc233792078aa"
-  integrity sha512-l+/u3TyR3+qS7mN0+HoNQRu/2BzHdLOMOOCDRLDE9gZGAqpKkD9ZD7hkpjan+GGY3f0nHaE7Qv7kI6qmQK+AkA==
+openpgp@^4.10.9:
+  version "4.10.9"
+  resolved "https://registry.yarnpkg.com/openpgp/-/openpgp-4.10.9.tgz#fe61cc821fe6d9dd00036d66593b5882d50a9b1d"
+  integrity sha512-rW+q8j0wMKhXPB8s/DtLGHNWtYIgM5xElaq7RWaqQVRf9yaKMptjPq5QImG+ACpJJm6LdbN5ll/vr9Z2OWWZvg==
   dependencies:
     asn1.js "^5.0.0"
     node-fetch "^2.1.2"
